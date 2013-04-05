@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+        "name": "Publish Now",
+        "description": "Adds a publish now to posts in the out box",
+        "version": "1.0",
+        "permissions": [
+            "https://*.buddymedia.com/"
+            ],
+        "content_scripts": [
+        {
+            "matches": ["https://*.buddymedia.com/conversationbuddy/outbox*"],
+            "css": ["button.css"],
+            "js": ["jquery.js","publish-now.js"]
+        }
+    ]
+}

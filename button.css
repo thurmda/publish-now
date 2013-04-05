@@ -1,0 +1,23 @@
+.action-publish {
+  box-shadow:inset 0px 1px 0px 0px #caefab;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+  background-color:#77d42a;
+  border:1px solid #268a16;
+  display:inline-block;
+  text-decoration:none;
+  margin-right: 8px;
+  padding: 4px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(69, 121, 27);
+  text-shadow: rgb(153, 213, 100) 1px 1px 0px;
+}
+.action-publish:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+  background-color:#5cb811;
+  color: rgb(27, 97, 10);
+}
+.action-publish:active {
+  position:relative;
+  top:1px;
+}
