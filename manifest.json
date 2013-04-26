@@ -9,7 +9,9 @@
             ],
         "content_scripts": [
         {
-            "matches": ["https://*.buddymedia.com/conversationbuddy/outbox*"],
+            "matches": ["https://*.buddymedia.com/conversationbuddy/outbox*",
+                        "http://*.buddymedia.com/conversationbuddy/outbox*"
+                        ],
             "css": ["button.css"],
             "js": ["jquery.js","publish-now.js"]
         }
