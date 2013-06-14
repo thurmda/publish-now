@@ -5,12 +5,17 @@
         "description": "Adds a publish now to posts in the out box",
         "version": "1.0",
         "permissions": [
-            "https://*.buddymedia.com/"
+            "https://*.buddymedia.com/",
+            "https://*.smfc.co/",
+            "https://*.test.dev.us1.sfmc.co/"
             ],
         "content_scripts": [
         {
             "matches": ["https://*.buddymedia.com/conversationbuddy/outbox*",
-                        "http://*.buddymedia.com/conversationbuddy/outbox*"
+                        "http://*.buddymedia.com/conversationbuddy/outbox*",
+                        "http://*.smfc.co/conversationbuddy/outbox*",
+                        "https://*.smfc.co/conversationbuddy/outbox*",
+                        "https://*.test.dev.us1.sfmc.co/conversationbuddy/outbox*"
                         ],
             "css": ["button.css"],
             "js": ["jquery.js","publish-now.js"]
